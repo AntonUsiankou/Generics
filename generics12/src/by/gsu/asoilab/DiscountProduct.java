@@ -28,6 +28,6 @@ public class DiscountProduct extends Product {
 
     @Override
     public String toString() {
-        return priceDiscount + ";";
+        return super.toString() + SEPARATOR + priceDiscount;
     }
 }

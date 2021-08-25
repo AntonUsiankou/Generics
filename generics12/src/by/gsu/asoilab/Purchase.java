@@ -33,9 +33,8 @@ public class Purchase <T extends Item, N extends Number>{
     public Byn getCost() {
         return item.getPrice().multiply(number.doubleValue(), RoundMethod.CEIL, NUMBER_NULL);
     }
-
     @Override
     public String toString() {
-        return  item + ";" + number;
+        return item + Constants.SEPARATOR + number + Constants.SEPARATOR + getCost();
     }
 }
