@@ -30,6 +30,6 @@ public class Product implements Item {
 
     @Override
     public String toString() {
-        return  product + ";" + price;
+        return  product + Constants.SEPARATOR + price;
     }
 }

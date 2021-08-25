@@ -2,7 +2,7 @@ package by.gsu.asoilab;
 
 public class Byn implements Comparable<Byn> {
 
-    private int value;
+    private final int value;
 
     public Byn(int value) {
         this.value = value;
@@ -37,7 +37,7 @@ public class Byn implements Comparable<Byn> {
     }
 
     public Byn round(RoundMethod roundMethod, int roundDigits) {
-        return new Byn(this.value = roundMethod.rounding(this.value, roundDigits));
+        return new Byn( roundMethod.rounding(value, roundDigits));
     }
 
     @Override

@@ -1,7 +1,6 @@
 package by.gsu.asoilab;
 
-import static by.gsu.asoilab.Constants.NUMBER_NULL;
-import static by.gsu.asoilab.Constants.NUMBER_ONE_DOT_NULL;
+import static by.gsu.asoilab.Constants.*;
 
 public class Service implements Item {
     private String serviceName;
@@ -48,7 +47,7 @@ public class Service implements Item {
 
     @Override
     public String toString() {
-        return  serviceName + ";" + totalCost + ";" + numberOfUsers;
+        return  serviceName + SEPARATOR + totalCost + SEPARATOR + numberOfUsers;
     }
 
 
